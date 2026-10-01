@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Syne', sans-serif;
+    --font-serif: 'Cinzel', serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --color-brass: #c8a97e;
+    --color-brass-light: #dfc299;
+    --color-charcoal: #151719;
+    --color-ivory: #f4f2ee;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #0b0c0e;
+    color: var(--color-ivory);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  .font-luxury {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0c0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #25282c;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c8a97e;
+}
+
+/* Hairline dividers & luxury subtle borders */
+.border-hairline {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.border-brass-hairline {
+  border-color: rgba(200, 169, 126, 0.25);
+}
+
+.text-brass {
+  color: #c8a97e;
+}
+
+.bg-brass {
+  background-color: #c8a97e;
+}
+
+/* Dynamic Architectural Lighting Global Effects */
+:root {
+  --dynamic-light-rgb: 255, 180, 107;
+  --dynamic-light-color: rgba(255, 180, 107, 0.22);
+  --dynamic-light-glow: rgba(255, 180, 107, 0.38);
+  --dynamic-light-intensity: 0.85;
+}
+
+/* Dynamic luminaire card hover glow */
+.card-light-hover {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-light-hover:hover {
+  border-color: var(--dynamic-light-glow);
+  box-shadow: 0 0 25px -5px var(--dynamic-light-color);
+}
+
+/* Subtle architectural light beam pulse */
+@keyframes lightPulse {
+  0%, 100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.65;
+  }
+}
+
+.animate-light-pulse {
+  animation: lightPulse 4s ease-in-out infinite;
+}
+

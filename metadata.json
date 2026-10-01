@@ -1,0 +1,6 @@
+{
+  "name": "LED WORLD | Architectural Lighting & Systems",
+  "description": "Light is the experience. Premium architectural LED lighting solutions engineered to transform spaces through technology, performance, and design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
